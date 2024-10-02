@@ -273,10 +273,3 @@ df_res = df_res.loc[df_res['condition']==1,:]
 
 fig= utils_amsterdam_contrast_detection.pupil_tis_resp_behav_cor(df_res=df_res, indices=['c_abs_diff'], r_place=5)
 # fig.savefig(os.path.join(figs_dir, '{}_as_size_behavior_{}.pdf'.format(data_set, m)))
-
-######################### Currently not used ##############################
-
-# # Fig S: plot AS consequences for rep probability and baseline
-# for m in ['pupil_b', 'repetition_past', 'repetition_future', 'tpr','tpr_c']:
-#     fig = utils_amsterdam_contrast_detection.plot_history(df=df.loc[df['trial_nr']>trial_cutoff,:], m=m)
-#     # fig.savefig(os.path.join(figs_dir, '{}_history_bias_{}.pdf'.format(data_set, m)))
